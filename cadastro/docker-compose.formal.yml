@@ -1,0 +1,36 @@
+name: cadastro-compose-formal
+
+services:
+  mysql-compose:
+    image: mysql:8
+    container_name: mysql-cadastro-compose
+    restart: unless-stopped
+    env_file:
+      - .env.compose
+    ports:
+      - "3308:3306"
+    volumes:
+      - mysql_compose_data:/var/lib/mysql
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - "mysqladmin ping -h 127.0.0.1 -u root -p$$MYSQL_ROOT_PASSWORD --silent"
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  app-compose:
+    image: cadastro-app:latest
+    container_name: cadastro-api-compose
+    restart: unless-stopped
+    env_file:
+      - .env.compose
+    depends_on:
+      mysql-compose:
+        condition: service_healthy
+    ports:
+      - "8082:8081"
+
+volumes:
+  mysql_compose_data:
+    name: cadastro_compose_formal_mysql_data

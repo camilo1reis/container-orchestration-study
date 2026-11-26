@@ -1,0 +1,19 @@
+global:
+  scrape_interval: 5s
+  scrape_timeout: 4s
+
+scrape_configs:
+  - job_name: "cadastro-api-swarm"
+    metrics_path: /actuator/prometheus
+    static_configs:
+      - targets: ["host.docker.internal:8081"]
+
+  - job_name: "cadastro-api-compose"
+    metrics_path: /actuator/prometheus
+    static_configs:
+      - targets: ["host.docker.internal:32768", "host.docker.internal:32769", "host.docker.internal:32770"]
+
+  - job_name: "cadastro-api-kubernetes"
+    metrics_path: /actuator/prometheus
+    static_configs:
+      - targets: ["host.docker.internal:30081"]
