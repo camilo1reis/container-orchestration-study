@@ -1,0 +1,14 @@
+﻿Ambiente: Docker Swarm
+Carga: 15 VUs
+Rodada: R1
+Início: 
+Término: 
+Duração medida: 2 minutos
+Requisições: 4406
+Throughput: 36.615588 req/s
+Latência média: 408.74 ms
+Mediana: 406.04 ms
+P90: 542.03 ms
+P95: 596.17 ms
+Máxima: 914.83 ms
+Falhas HTTP: 0%

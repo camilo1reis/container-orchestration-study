@@ -1,0 +1,16 @@
+NAME                                READY   STATUS    RESTARTS   AGE   IP         NODE             NOMINATED NODE   READINESS GATES
+pod/cadastro-api-6677f7b7d9-2nvqf   1/1     Running   0          53m   10.1.0.8   docker-desktop   <none>           <none>
+pod/mysql-688bbb78c6-dxrhv          1/1     Running   0          58m   10.1.0.7   docker-desktop   <none>           <none>
+
+NAME                   TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)          AGE   SELECTOR
+service/cadastro-api   NodePort    10.100.209.126   <none>        8081:30081/TCP   53m   app=cadastro-api
+service/kubernetes     ClusterIP   10.96.0.1        <none>        443/TCP          78m   <none>
+service/mysql          ClusterIP   10.102.139.31    <none>        3306/TCP         58m   app=mysql
+
+NAME                           READY   UP-TO-DATE   AVAILABLE   AGE   CONTAINERS     IMAGES                SELECTOR
+deployment.apps/cadastro-api   1/1     1            1           53m   cadastro-api   cadastro-app:latest   app=cadastro-api
+deployment.apps/mysql          1/1     1            1           58m   mysql          mysql:8               app=mysql
+
+NAME                                      DESIRED   CURRENT   READY   AGE   CONTAINERS     IMAGES                SELECTOR
+replicaset.apps/cadastro-api-6677f7b7d9   1         1         1       53m   cadastro-api   cadastro-app:latest   app=cadastro-api,pod-template-hash=6677f7b7d9
+replicaset.apps/mysql-688bbb78c6          1         1         1       58m   mysql          mysql:8               app=mysql,pod-template-hash=688bbb78c6

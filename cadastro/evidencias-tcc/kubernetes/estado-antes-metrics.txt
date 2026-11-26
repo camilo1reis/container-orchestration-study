@@ -1,0 +1,17 @@
+NAME             STATUS   ROLES           AGE   VERSION
+docker-desktop   Ready    control-plane   63m   v1.36.1
+NAMESPACE     NAME                                     READY   STATUS    RESTARTS      AGE
+default       cadastro-api-6677f7b7d9-2nvqf            1/1     Running   0             37m
+default       mysql-688bbb78c6-dxrhv                   1/1     Running   0             42m
+kube-system   coredns-589f44dc88-qnv65                 1/1     Running   0             62m
+kube-system   coredns-589f44dc88-z45xp                 1/1     Running   0             62m
+kube-system   etcd-docker-desktop                      1/1     Running   0             62m
+kube-system   kube-apiserver-docker-desktop            1/1     Running   0             62m
+kube-system   kube-controller-manager-docker-desktop   1/1     Running   2 (62m ago)   62m
+kube-system   kube-proxy-5kmfr                         1/1     Running   0             62m
+kube-system   kube-scheduler-docker-desktop            1/1     Running   1 (57m ago)   62m
+kube-system   storage-provisioner                      1/1     Running   1 (57m ago)   62m
+kube-system   vpnkit-controller                        1/1     Running   0             62m
+NAME           READY   UP-TO-DATE   AVAILABLE   AGE
+cadastro-api   1/1     1            1           37m
+mysql          1/1     1            1           42m

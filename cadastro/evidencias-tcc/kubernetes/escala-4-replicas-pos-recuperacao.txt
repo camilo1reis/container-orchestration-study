@@ -1,0 +1,10 @@
+NAME                            READY   STATUS    RESTARTS       AGE     IP          NODE             NOMINATED NODE   READINESS GATES
+cadastro-api-858fc8699f-7zjmd   1/1     Running   24 (85m ago)   19d     10.1.0.80   docker-desktop   <none>           <none>
+cadastro-api-858fc8699f-hpd2g   1/1     Running   3 (85m ago)    2d10h   10.1.0.79   docker-desktop   <none>           <none>
+cadastro-api-858fc8699f-t747z   1/1     Running   11 (85m ago)   3d10h   10.1.0.78   docker-desktop   <none>           <none>
+cadastro-api-858fc8699f-wgjrn   1/1     Running   24 (85m ago)   19d     10.1.0.76   docker-desktop   <none>           <none>
+NAME                            CPU(cores)   MEMORY(bytes)
+cadastro-api-858fc8699f-7zjmd   3m           332Mi
+cadastro-api-858fc8699f-hpd2g   4m           309Mi
+cadastro-api-858fc8699f-t747z   4m           302Mi
+cadastro-api-858fc8699f-wgjrn   4m           326Mi

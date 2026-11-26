@@ -1,0 +1,16 @@
+MONITORAMENTO INICIAL - DOCKER SWARM
+
+Disponibilidade:
+Consulta: up{job="cadastro-api-swarm"}
+Resultado observado: 1
+
+Throughput:
+Consulta: rate(http_server_requests_seconds_count{uri="/auth/login",method="POST"}[5m])
+Resultado observado: até 0,035 RPS
+
+Latência média:
+Consulta: sum(rate(http_server_requests_seconds_sum{uri="/auth/login",method="POST"}[5m])) / sum(rate(http_server_requests_seconds_count{uri="/auth/login",method="POST"}[5m]))
+Resultado observado: aproximadamente 0,08 segundo (80 ms)
+
+Teste exploratório com dez requisições de login.
+Os valores não representam ainda o benchmark definitivo.

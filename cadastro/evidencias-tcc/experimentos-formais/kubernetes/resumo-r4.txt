@@ -1,0 +1,31 @@
+EXPERIMENTO FORMAL - KUBERNETES
+Data: 03/11/2026
+Repeticao: 4
+Perfil: Basico - 1 replica
+Usuarios simultaneos: 5
+Duracao configurada: 2 minutos
+Ferramenta: k6 2.3.0
+
+HORARIOS
+Inicio: 20:17:46
+Fim: 20:19:55
+
+RESULTADOS K6
+Requisicoes: 4106
+Throughput: 33.900443 req/s
+Latencia media: 147.14 ms
+Latencia mediana: 134.53 ms
+Latencia p90: 206.77 ms
+Latencia p95: 237.69 ms
+Latencia maxima: 654.42 ms
+Falhas HTTP: 0%
+
+METRICAS PROMETHEUS/GRAFANA
+Intervalo de coleta: 5 segundos
+CPU maxima (CSV): 91.80% as 20:19:00
+Memoria heap maxima (CSV): 88.20 MiB as 20:18:15
+Amostras CPU: 26
+Amostras memoria heap: 26
+
+Relatorio bruto: resultado-r4.json
+Exportacoes: pasta graficos/

@@ -1,0 +1,2 @@
+NAME                            READY   STATUS    RESTARTS   AGE   IP          NODE             NOMINATED NODE   READINESS GATES
+cadastro-api-7f85c6976b-n46hp   1/1     Running   0          37m   10.1.1.79   docker-desktop   <none>           <none>

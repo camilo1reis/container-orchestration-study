@@ -1,0 +1,12 @@
+NAME             STATUS   ROLES           AGE   VERSION   INTERNAL-IP    EXTERNAL-IP   OS-IMAGE         KERNEL-VERSION                              CONTAINER-RUNTIME
+docker-desktop   Ready    control-plane   16d   v1.36.1   192.168.65.3   <none>        Docker Desktop   6.18.33.2-microsoft-standard-WSL2 (amd64)   docker://29.8.0
+NAME                            READY   STATUS    RESTARTS         AGE   IP          NODE             NOMINATED NODE   READINESS GATES
+cadastro-api-858fc8699f-7zjmd   1/1     Running   17 (8m22s ago)   16d   10.1.0.61   docker-desktop   <none>           <none>
+cadastro-api-858fc8699f-t747z   1/1     Running   4 (8m16s ago)    8h    10.1.0.56   docker-desktop   <none>           <none>
+cadastro-api-858fc8699f-wgjrn   1/1     Running   17 (8m19s ago)   16d   10.1.0.55   docker-desktop   <none>           <none>
+NAME             CPU(cores)   CPU(%)   MEMORY(bytes)   MEMORY(%)   
+docker-desktop   781m         19%      2991Mi          30%         
+NAME                            CPU(cores)   MEMORY(bytes)   
+cadastro-api-858fc8699f-7zjmd   4m           355Mi           
+cadastro-api-858fc8699f-t747z   3m           300Mi           
+cadastro-api-858fc8699f-wgjrn   5m           298Mi           

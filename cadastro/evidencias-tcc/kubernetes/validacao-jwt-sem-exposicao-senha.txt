@@ -1,0 +1,16 @@
+=== VALIDACAO JWT E RESPOSTA SEM SENHA ===
+Fri Oct  9 08:31:36     2026
+
+=== REPLICAS DA API ===
+NAME                            READY   STATUS    RESTARTS   AGE     IP          NODE             NOMINATED NODE   READINESS GATES
+cadastro-api-7fbcbdf8dc-4bdzq   1/1     Running   0          4m25s   10.1.0.96   docker-desktop   <none>           <none>
+cadastro-api-7fbcbdf8dc-cxwhj   1/1     Running   0          4m9s    10.1.0.98   docker-desktop   <none>           <none>
+cadastro-api-7fbcbdf8dc-hwkbt   1/1     Running   0          4m3s    10.1.0.99   docker-desktop   <none>           <none>
+cadastro-api-7fbcbdf8dc-q65hl   1/1     Running   0          4m22s   10.1.0.97   docker-desktop   <none>           <none>
+
+=== IMAGEM DO DEPLOYMENT ===
+cadastro-app:latest
+
+=== TESTE DE LOGIN E ENDPOINT PROTEGIDO ===
+[{"email":"teste.tcc@teste.com","id":1,"nome":"Usuario Teste TCC"}]
+HTTP 200

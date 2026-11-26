@@ -1,0 +1,22 @@
+Name:                                                  cadastro-api
+Namespace:                                             default
+Labels:                                                <none>
+Annotations:                                           <none>
+CreationTimestamp:                                     Wed, 18 Nov 2026 23:40:54 -0300
+Reference:                                             Deployment/cadastro-api
+Metrics:                                               ( current / target )
+  resource cpu on pods  (as a percentage of request):  8% (8m) / 70%
+Min replicas:                                          1
+Max replicas:                                          3
+Deployment pods:                                       1 current / 1 desired
+Conditions:
+  Type            Status  Reason              Message
+  ----            ------  ------              -------
+  AbleToScale     True    ReadyForNewScale    recommended size matches current size
+  ScalingActive   True    ValidMetricFound    the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)
+  ScalingLimited  False   DesiredWithinRange  the desired count is within the acceptable range
+Events:
+  Type    Reason             Age                  From                       Message
+  ----    ------             ----                 ----                       -------
+  Normal  SuccessfulRescale  9m49s                horizontal-pod-autoscaler  New size: 3; reason: cpu resource utilization (percentage of request) above target
+  Normal  SuccessfulRescale  2m48s (x2 over 28m)  horizontal-pod-autoscaler  New size: 1; reason: All metrics below target

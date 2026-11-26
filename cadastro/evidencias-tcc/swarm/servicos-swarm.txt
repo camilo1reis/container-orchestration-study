@@ -1,0 +1,3 @@
+ID             NAME             MODE         REPLICAS   IMAGE                 PORTS
+zfhe0s1mkg5s   cadastro_app     replicated   1/1        cadastro-app:latest   *:8081->8081/tcp
+73ebkpcc929p   cadastro_mysql   replicated   1/1        mysql:8               *:3307->3306/tcp

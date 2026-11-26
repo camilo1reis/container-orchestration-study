@@ -1,0 +1,16 @@
+EVIDENCIAS GRAFANA - DOCKER SWARM
+Data dos experimentos: 02/11/2026
+
+Arquivos por repeticao:
+R1: CPU e memoria heap
+R2: CPU e memoria heap
+R4: CPU e memoria heap
+R5: CPU e memoria heap
+
+A R3 foi mantida fora deste conjunto porque nao houve coleta completa de CPU e memoria heap.
+
+Observacoes:
+- As capturas foram renomeadas para facilitar sua identificacao.
+- R1 CPU exibe a metrica original (0.887); isso corresponde a 88.7% e foi convertido no resumo.
+- R5 memoria heap usa a captura corrigida, com janela encerrada em 21:04:45. O ponto de 21:04:55 foi excluido.
+- Intervalo de coleta Prometheus/Grafana: 5 segundos.

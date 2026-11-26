@@ -1,0 +1,29 @@
+=== RECURSOS APOS CONFIGURACAO DE REQUESTS E LIMITS ===
+
+Data:
+Tue Oct  6 02:23:43     2026
+
+=== PODS ===
+NAME                           READY   STATUS    RESTARTS   AGE
+cadastro-api-bd4d56587-djb22   1/1     Running   0          7h55m
+cadastro-api-bd4d56587-g46jv   1/1     Running   0          7h55m
+cadastro-api-bd4d56587-jkcrn   1/1     Running   0          7h55m
+cadastro-api-bd4d56587-n7cfz   1/1     Running   0          7h55m
+NAME                    READY   STATUS    RESTARTS   AGE
+mysql-99ddb7446-h9wfw   1/1     Running   0          4m41s
+
+=== CONSUMO DOS PODS ===
+NAME                           CPU(cores)   MEMORY(bytes)
+cadastro-api-bd4d56587-djb22   3m           223Mi
+cadastro-api-bd4d56587-g46jv   3m           217Mi
+cadastro-api-bd4d56587-jkcrn   3m           224Mi
+cadastro-api-bd4d56587-n7cfz   3m           223Mi
+mysql-99ddb7446-h9wfw          10m          428Mi
+
+=== CONSUMO DO NODE ===
+NAME             CPU(cores)   CPU(%)   MEMORY(bytes)   MEMORY(%)
+docker-desktop   733m         18%      3339Mi          33%
+
+=== RECURSOS CONFIGURADOS ===
+{"limits":{"cpu":"500m","memory":"512Mi"},"requests":{"cpu":"100m","memory":"256Mi"}}
+{"limits":{"cpu":"1","memory":"1Gi"},"requests":{"cpu":"250m","memory":"512Mi"}}

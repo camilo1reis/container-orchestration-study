@@ -1,0 +1,49 @@
+CONSOLIDADO DOS EXPERIMENTOS FORMAIS - KUBERNETES
+Data: 03/11/2026
+Perfil: Basico - 1 replica
+Usuarios simultaneos: 5
+Duracao configurada: 2 minutos por repeticao
+Ferramenta: k6 2.3.0
+Metricas: Prometheus/Grafana
+Intervalo de coleta: 5 segundos
+
+RESULTADOS POR REPETICAO
+
+Indicador             R1        R2        R3        R4
+Requisicoes           3378      3484      3539      4106
+Throughput (req/s)    26.985837 27.825412 29.063668 33.900443
+Latencia media (ms)  184.80    179.35    171.71    147.14
+Mediana (ms)          166.70    158.94    157.91    134.53
+P90 (ms)              246.83    246.61    236.56    206.77
+P95 (ms)              283.36    282.64    275.46    237.69
+Maxima (ms)           1490.00   1180.00   860.96    654.42
+CPU maxima (%)        90.40     90.80     88.70     91.80
+Heap maxima (MiB)     86.90     88.20     88.50     88.20
+Falhas HTTP (%)       0         0         0         0
+
+MEDIAS DAS QUATRO REPETICOES
+
+Requisicoes: 3626.75
+Throughput: 29.443840 req/s
+Latencia media: 170.75 ms
+Mediana: 154.52 ms
+P90: 234.19 ms
+P95: 269.79 ms
+Latencia maxima: 1046.35 ms
+CPU maxima media: 90.43%
+Memoria heap maxima media: 87.95 MiB
+Falhas HTTP: 0%
+
+OBSERVACOES METODOLOGICAS
+
+1. Os valores de CPU e memoria heap representam as medias dos
+   maximos observados em cada repeticao, extraidos dos CSVs.
+2. P90 e P95 apresentados na media sao medias dos percentis
+   individuais das quatro execucoes, nao percentis agrupados.
+3. Todas as quatro repeticoes apresentaram 0% de falhas HTTP.
+4. O ambiente utilizou o perfil basico do Kubernetes, com uma
+   replica da aplicacao e sem limites explicitos de recursos.
+5. As evidencias individuais estao nos arquivos resumo-r1.txt
+   a resumo-r4.txt, resultados JSON e pasta graficos/.
+
+FIM DO CONSOLIDADO

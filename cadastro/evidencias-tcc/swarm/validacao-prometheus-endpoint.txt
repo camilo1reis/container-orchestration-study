@@ -1,0 +1,16 @@
+Validação do endpoint Prometheus
+Thu Oct 29 00:53:13     2026
+Endpoint: http://localhost:8081/actuator/prometheus
+Resultado: HTTP 200
+# HELP application_ready_time_seconds Time taken for the application to be ready to service requests
+# TYPE application_ready_time_seconds gauge
+application_ready_time_seconds{main_application_class="cadastro.CadastroApplication"} 8.031
+# HELP application_started_time_seconds Time taken to start the application
+# TYPE application_started_time_seconds gauge
+application_started_time_seconds{main_application_class="cadastro.CadastroApplication"} 7.886
+# HELP disk_free_bytes Usable space for path
+# TYPE disk_free_bytes gauge
+disk_free_bytes{path="/app/."} 1.007124320256E12
+# HELP disk_total_bytes Total space for path
+# TYPE disk_total_bytes gauge
+disk_total_bytes{path="/app/."} 1.081101176832E12

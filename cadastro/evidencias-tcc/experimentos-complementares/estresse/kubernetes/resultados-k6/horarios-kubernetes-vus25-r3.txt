@@ -1,0 +1,7 @@
+﻿Experimento: Kubernetes - Campanha complementar
+Carga: 25 VUs
+Repeticao: R3
+Inicio: 2026-11-16 09:30:30.611 -03:00
+Fim: 2026-11-16 09:32:31.808 -03:00
+Duracao configurada: 2m
+Codigo de saida: 0

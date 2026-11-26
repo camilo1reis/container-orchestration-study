@@ -1,0 +1,18 @@
+EXPERIMENTO DE CARGA - DOCKER SWARM
+Data: 02/11/2026
+Usuarios simultaneos: 5
+Duracao: 2 minutos
+Repeticao: 2
+
+RESULTADOS K6
+Requisicoes: 3366
+Throughput medio: 28.026089 req/s
+Latencia media: 177.91 ms
+Latencia mediana: 166.95 ms
+Latencia p95: 272.87 ms
+Latencia maxima: 494.13 ms
+Falhas HTTP: 0%
+
+Todos os 3366 checks de login HTTP 200 foram aprovados.
+
+Relatorio bruto: resultado-swarm-repeticao2.json

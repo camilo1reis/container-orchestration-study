@@ -1,0 +1,7 @@
+﻿Experimento: Aquecimento Kubernetes
+Usuarios virtuais: 5
+Duracao: 30 segundos
+Inicio: 2026-11-14 00:10:09.263 -03:00
+Status: EM EXECUCAO
+Fim: 2026-11-14 00:10:39.861 -03:00
+Codigo de saida: 0

@@ -1,0 +1,53 @@
+CONSOLIDACAO DOS EXPERIMENTOS FORMAIS
+DOCKER COMPOSE
+Data: 03/11/2026
+
+1. PROTOCOLO
+Usuarios simultaneos: 5
+Duracao configurada: 2 minutos
+Ferramenta de carga: k6 2.3.0
+Monitoramento: Prometheus e Grafana
+Intervalo de coleta: 5 segundos
+
+2. REPETICOES INCLUIDAS
+R1, R2, R3 e R4
+
+3. RESULTADOS INDIVIDUAIS
+
+Indicador             R1        R2        R3        R4
+Requisicoes           3302      4772      4931      5020
+Throughput (req/s)    27.4995   38.1148   39.1670   39.8447
+Latencia media (ms)   181.27    130.77    127.26    125.11
+Latencia mediana (ms) 169.87    119.41    114.23    112.69
+Latencia p95 (ms)     278.88    188.50    190.49    184.80
+CPU maxima (%)        88.40     90.70     90.80     90.00
+Heap maxima (MiB)     87.60     82.10     82.70     82.90
+Falhas HTTP (%)       0         0         0         0
+
+4. MEDIAS ARITMETICAS
+
+Requisicoes por teste: 4506.25
+Throughput: 36.156491 req/s
+Latencia media: 141.1025 ms
+Latencia mediana: 129.05 ms
+Latencia p95 media: 210.6675 ms
+CPU maxima media: 89.975%
+Memoria heap maxima media: 83.825 MiB
+Falhas HTTP: 0%
+
+5. OBSERVACOES
+As quatro repeticoes foram utilizadas na analise principal.
+Todas apresentaram 0% de falhas HTTP.
+A R1 apresentou desempenho inferior as repeticoes R2, R3 e R4.
+Essa variacao sera considerada na discussao dos resultados.
+
+Os valores de CPU e memoria foram conferidos por meio
+dos arquivos CSV exportados do Prometheus pelo Grafana.
+
+6. EVIDENCIAS
+Resultados brutos do k6: arquivos resultado-r*.json
+Resumos individuais: arquivos resumo-r*.txt
+Horarios: arquivos horarios-r*.txt
+Exportacoes Prometheus: pasta graficos/
+
+FIM DA CONSOLIDACAO

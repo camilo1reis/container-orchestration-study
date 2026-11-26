@@ -1,0 +1,43 @@
+PROTOCOLO DE TESTE DE ESTRESSE - TCC
+
+Gerador de carga: k6 2.3.0
+Gerador: segundo notebook (8 GB)
+Servidor: notebook principal (24 GB)
+Conexao: Wi-Fi 5 GHz
+
+NIVEIS DE CARGA
+5 usuarios virtuais
+10 usuarios virtuais
+15 usuarios virtuais
+20 usuarios virtuais
+25 usuarios virtuais
+
+AQUECIMENTO
+30 segundos por nivel, sem contabilizar os resultados.
+
+DURACAO MEDIDA
+2 minutos por nivel.
+
+AMBIENTES
+Docker Swarm
+Docker Compose
+Kubernetes
+
+METRICAS
+Throughput
+Latencia media
+Mediana
+P90
+P95
+Latencia maxima
+Falhas HTTP
+CPU
+Memoria heap
+
+Monitoramento: Prometheus e Grafana
+Intervalo de coleta: 5 segundos.
+
+OBSERVACAO
+Resultados complementares, separados dos experimentos formais
+anteriores. A primeira rodada sera utilizada para avaliar a
+estabilidade da campanha e a necessidade de repeticao.

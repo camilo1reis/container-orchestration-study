@@ -1,0 +1,2 @@
+NAME             CPU(cores)   CPU(%)   MEMORY(bytes)   MEMORY(%)   
+docker-desktop   742m         18%      3779Mi          38%         

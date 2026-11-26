@@ -1,0 +1,81 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    deployment.kubernetes.io/revision: "1"
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{},"name":"mysql","namespace":"default"},"spec":{"replicas":1,"selector":{"matchLabels":{"app":"mysql"}},"template":{"metadata":{"labels":{"app":"mysql"}},"spec":{"containers":[{"env":[{"name":"MYSQL_ROOT_PASSWORD","value":"REDACTED"},{"name":"MYSQL_DATABASE","value":"cadastro_db"},{"name":"MYSQL_USER","value":"cadastro_user"},{"name":"MYSQL_PASSWORD","value":"REDACTED"}],"image":"mysql:8","name":"mysql","ports":[{"containerPort":3306}],"volumeMounts":[{"mountPath":"/var/lib/mysql","name":"mysql-storage"}]}],"volumes":[{"name":"mysql-storage","persistentVolumeClaim":{"claimName":"mysql-pvc"}}]}}}}
+  creationTimestamp: "2026-09-15T04:31:13Z"
+  generation: 1
+  name: mysql
+  namespace: default
+  resourceVersion: "175864"
+  uid: 34553910-8afe-46d6-bf17-5f1dcb35949a
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 1
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      app: mysql
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: mysql
+    spec:
+      containers:
+      - env:
+        - name: MYSQL_ROOT_PASSWORD
+          value: "REDACTED"
+        - name: MYSQL_DATABASE
+          value: cadastro_db
+        - name: MYSQL_USER
+          value: cadastro_user
+        - name: MYSQL_PASSWORD
+          value: "REDACTED"
+        image: mysql:8
+        imagePullPolicy: IfNotPresent
+        name: mysql
+        ports:
+        - containerPort: 3306
+          protocol: TCP
+        resources: {}
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+        volumeMounts:
+        - mountPath: /var/lib/mysql
+          name: mysql-storage
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
+      volumes:
+      - name: mysql-storage
+        persistentVolumeClaim:
+          claimName: mysql-pvc
+status:
+  availableReplicas: 1
+  conditions:
+  - lastTransitionTime: "2026-09-15T04:31:14Z"
+    lastUpdateTime: "2026-09-15T04:31:25Z"
+    message: ReplicaSet "mysql-688bbb78c6" has successfully progressed.
+    reason: NewReplicaSetAvailable
+    status: "True"
+    type: Progressing
+  - lastTransitionTime: "2026-10-04T22:44:54Z"
+    lastUpdateTime: "2026-10-04T22:44:54Z"
+    message: Deployment has minimum availability.
+    reason: MinimumReplicasAvailable
+    status: "True"
+    type: Available
+  observedGeneration: 1
+  readyReplicas: 1
+  replicas: 1
+  terminatingReplicas: 0
+  updatedReplicas: 1

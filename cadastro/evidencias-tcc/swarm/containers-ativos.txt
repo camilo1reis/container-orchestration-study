@@ -1,0 +1,8 @@
+NAMES                                                                                            STATUS
+k8s_cadastro-api_cadastro-api-7fbcbdf8dc-q65hl_default_e34d4a26-b4c2-4040-b10a-c6c9fc162766_16   Up 3 minutes
+k8s_cadastro-api_cadastro-api-7fbcbdf8dc-cxwhj_default_652621b4-f195-47ca-9c77-3fca604c9b9c_16   Up 3 minutes
+k8s_cadastro-api_cadastro-api-7fbcbdf8dc-4bdzq_default_c889cd42-dec0-40c6-9101-3c43bb835911_17   Up 3 minutes
+k8s_cadastro-api_cadastro-api-7fbcbdf8dc-hwkbt_default_bd1ebe76-c8b0-4976-9d91-ba29cc60a961_16   Up 4 minutes
+k8s_mysql_mysql-99ddb7446-h9wfw_default_62675fa7-990a-4a35-b7de-78205eda62d0_5                   Up 5 minutes
+cadastro_app.1.pdsrpj6bvrtrl72uo0yv0l4ie                                                         Up 6 minutes
+cadastro_mysql.1.3eiychsfzzvpgzjtwb8h8lupt                                                       Up 11 minutes

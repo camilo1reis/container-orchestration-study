@@ -1,0 +1,1 @@
+Cadastro: HTTP 200; Login JWT: HTTP 200; Consulta protegida /usuarios: HTTP 200; usuário teste.tcc@teste.com retornado sem senha.

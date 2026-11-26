@@ -1,0 +1,4 @@
+NAME           TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)          AGE   SELECTOR
+cadastro-api   NodePort    10.100.209.126   <none>        8081:30081/TCP   23m   app=cadastro-api
+kubernetes     ClusterIP   10.96.0.1        <none>        443/TCP          48m   <none>
+mysql          ClusterIP   10.102.139.31    <none>        3306/TCP         27m   app=mysql

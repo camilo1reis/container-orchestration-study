@@ -1,0 +1,10 @@
+﻿Experimento: Soak Test Docker Compose
+Notebook: GLEICIELE
+API: http://192.168.2.134:8082
+Usuarios virtuais: 5
+Duracao configurada: 60m
+Inicio local: 2026-11-13 19:46:58.465 -03:00
+Fim local: PENDENTE
+Codigo de saida: PENDENTE
+Fim local: 2026-11-13 20:47:01.175 -03:00
+Codigo de saida: 0

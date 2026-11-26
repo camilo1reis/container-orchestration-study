@@ -1,0 +1,31 @@
+=== TESTE DE AUTENTICACAO JWT NO KUBERNETES ===
+
+Data: Wed Sep 30 22:24:25     2026
+
+Endpoint de login:
+POST http://localhost:30081/auth/login
+
+Usuario de teste:
+Email: teste.tcc@teste.com
+
+Resultado:
+Login realizado com sucesso e token JWT gerado.
+
+Endpoint protegido:
+GET http://localhost:30081/usuarios
+
+Autenticacao:
+Authorization: Bearer [REDACTED]
+
+Resultado:
+Requisicao autenticada com sucesso.
+Usuario retornado: Usuario Teste TCC
+ID: 1
+Email: teste.tcc@teste.com
+
+Correcao aplicada:
+JwtFilter passou a registrar a autenticacao no SecurityContextHolder.
+
+Ambiente:
+Kubernetes - Docker Desktop
+cadastro-api: 2 replicas

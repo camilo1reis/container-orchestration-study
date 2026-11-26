@@ -1,0 +1,31 @@
+EXPERIMENTO FORMAL - DOCKER COMPOSE
+Data: 03/11/2026
+Repeticao: 1
+Usuarios simultaneos: 5
+Duracao configurada: 2 minutos
+Ferramenta: k6 2.3.0
+
+HORARIOS
+Inicio: 11:19:52
+Fim: 11:22:02
+
+RESULTADOS K6
+Requisicoes: 3302
+Throughput: 27.499505 req/s
+Latencia media: 181.27 ms
+Latencia mediana: 169.87 ms
+Latencia p90: 248.56 ms
+Latencia p95: 278.88 ms
+Latencia maxima: 467.59 ms
+Falhas HTTP: 0%
+
+METRICAS PROMETHEUS/GRAFANA
+Intervalo de coleta: 5 segundos
+CPU maxima (CSV): 88.40% as 11:20:35
+Memoria heap maxima (CSV): 87.60 MiB as 11:21:50
+
+Amostras CPU: 26
+Amostras memoria heap: 26
+
+Relatorio bruto: resultado-r1.json
+Exportacoes: pasta graficos/

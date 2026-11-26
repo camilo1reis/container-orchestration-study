@@ -1,0 +1,2 @@
+NAME        STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   VOLUMEATTRIBUTESCLASS   AGE   VOLUMEMODE
+mysql-pvc   Bound    pvc-4c2a38c9-20c0-4a03-9246-0be91be87f8d   1Gi        RWO            hostpath       <unset>                 57m   Filesystem

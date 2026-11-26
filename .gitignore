@@ -1,0 +1,37 @@
+# IDEs e editores
+.idea/
+.vscode/
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Variáveis de ambiente e credenciais
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Artefatos de compilação
+**/target/
+**/build/
+
+# Maven Wrapper
+cadastro/.mvn/wrapper/maven-wrapper.jar
+
+# Arquivos temporários e backups
+cadastro/Test-Path
+*.bak
+*.bak-*
+
+# Configurações locais
+*.log
+
+# Evidências brutas HPA acima do limite de arquivo do GitHub
+/cadastro/evidencias-tcc/experimentos-complementares/escalonamento/kubernetes/hpa/resultado-hpa-ramping-r1.json
+/cadastro/evidencias-tcc/transferencia-notebook2/hpa-kubernetes-transfer-2026-11-19/resultado-hpa-ramping-r1.json
+
+# Evidências brutas HPA acima do limite de arquivo do GitHub
+/cadastro/evidencias-tcc/experimentos-complementares/escalonamento/kubernetes/hpa/resultado-hpa-ramping-r1.json
+/cadastro/evidencias-tcc/transferencia-notebook2/hpa-kubernetes-transfer-2026-11-19/resultado-hpa-ramping-r1.json

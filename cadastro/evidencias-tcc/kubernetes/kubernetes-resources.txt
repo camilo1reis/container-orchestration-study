@@ -1,0 +1,3 @@
+NAME                            CPU(cores)   MEMORY(bytes)   
+cadastro-api-6677f7b7d9-2nvqf   8m           421Mi           
+mysql-688bbb78c6-dxrhv          14m          543Mi           

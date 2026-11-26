@@ -1,0 +1,10 @@
+﻿Experimento: Soak Test Kubernetes
+Notebook: GLEICIELE
+API: http://192.168.2.134:30081
+Usuarios virtuais: 5
+Duracao configurada: 60m
+Inicio local: 2026-11-16 10:17:11.550 -03:00
+Fim local: PENDENTE
+Codigo de saida: PENDENTE
+Fim local: 2026-11-16 11:17:12.207 -03:00
+Codigo de saida: 0

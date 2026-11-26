@@ -1,0 +1,24 @@
+EXPERIMENTO DE CARGA - DOCKER SWARM
+Data: 02/11/2026
+Usuarios simultaneos: 5
+Duracao: 2 minutos
+
+RESULTADOS K6
+Requisicoes: 4584
+Throughput medio: 38.146409 req/s
+Latencia media: 130.65 ms
+Latencia mediana: 122.7 ms
+Latencia p95: 197.37 ms
+Latencia maxima: 327.05 ms
+Falhas HTTP: 0%
+
+PROMETHEUS / GRAFANA
+Janela observada: 16:28 a 16:31
+CPU JVM: pico observado de 0.00170
+CPU convertido: aproximadamente 0.17%
+Memoria heap: pico observado de 94.9 MiB
+Horario dos picos observados: 16:30
+
+Observacao: CPU e memoria representam o processo JVM.
+Valores preliminares, sujeitos a repeticoes experimentais.
+Relatorio bruto: resultado-swarm-k6.json

@@ -1,0 +1,31 @@
+PLANEJAMENTO DE FINALIZACAO DO TCC
+Periodo: 05/11/2026 a 23/11/2026
+
+05/11 - Preparacao e validacao
+06/11 - Estresse Docker Swarm
+07/11 - Estresse Docker Compose
+08/11 - Estresse Kubernetes
+09/11 - Analise do estresse
+10/11 - Soak Test Docker Swarm
+11/11 - Soak Test Docker Compose
+12/11 - Soak Test Kubernetes
+13/11 - Consolidacao das evidencias
+14/11 - Graficos e tabelas comparativas
+15/11 - Redacao de resultados e discussao
+16/11 - Consideracoes finais
+17/11 - Revisao da metodologia
+18/11 - Resumo, abstract e referencias
+19/11 - Primeira versao completa
+
+20/11 - Revisao de conteudo
+21/11 - Revisao academica e referencias
+22/11 - Formatacao institucional
+23/11 - Conferencia final e entrega
+
+PRIORIDADES:
+1. Preservar os resultados formais ja concluidos.
+2. Finalizar os testes complementares.
+3. Consolidar dados e evidencias.
+4. Finalizar o artigo.
+5. Reservar quatro dias para revisao.
+6. Escalabilidade permanece opcional.

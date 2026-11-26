@@ -1,0 +1,18 @@
+LAST SEEN   TYPE      REASON                    OBJECT                              MESSAGE
+8m47s       Normal    Starting                  node/docker-desktop                 
+11m         Normal    Starting                  node/docker-desktop                 Starting kubelet.
+11m         Normal    NodeHasSufficientPID      node/docker-desktop                 Node docker-desktop status is now: NodeHasSufficientPID
+11m         Normal    NodeAllocatableEnforced   node/docker-desktop                 Updated Node Allocatable limit across pods
+11m         Normal    NodeHasNoDiskPressure     node/docker-desktop                 Node docker-desktop status is now: NodeHasNoDiskPressure
+11m         Normal    NodeHasSufficientMemory   node/docker-desktop                 Node docker-desktop status is now: NodeHasSufficientMemory
+11m         Warning   Rebooted                  node/docker-desktop                 Node docker-desktop has been rebooted, boot id: 7c8dc14d-eefa-4140-8e34-a1d148403143
+10m         Normal    RegisteredNode            node/docker-desktop                 Node docker-desktop event: Registered Node docker-desktop in Controller
+10m         Normal    SandboxChanged            pod/cadastro-api-6677f7b7d9-2nvqf   Pod sandbox changed, it will be killed and re-created.
+10m         Normal    SandboxChanged            pod/mysql-688bbb78c6-dxrhv          Pod sandbox changed, it will be killed and re-created.
+9m52s       Normal    Pulled                    pod/mysql-688bbb78c6-dxrhv          Container image "mysql:8" already present on machine and can be accessed by the pod
+9m13s       Normal    Created                   pod/mysql-688bbb78c6-dxrhv          Container created
+8m47s       Normal    Started                   pod/mysql-688bbb78c6-dxrhv          Container started
+7m20s       Warning   BackOff                   pod/cadastro-api-6677f7b7d9-2nvqf   Back-off restarting failed container cadastro-api in pod cadastro-api-6677f7b7d9-2nvqf_default(502555bd-c9cd-41f5-b503-f9305cf5c050)
+6m37s       Normal    Pulled                    pod/cadastro-api-6677f7b7d9-2nvqf   Container image "cadastro-app:latest" already present on machine and can be accessed by the pod
+6m35s       Normal    Created                   pod/cadastro-api-6677f7b7d9-2nvqf   Container created
+6m34s       Normal    Started                   pod/cadastro-api-6677f7b7d9-2nvqf   Container started

@@ -1,0 +1,27 @@
+EXPERIMENTO FORMAL - DOCKER SWARM
+Data: 02/11/2026
+Repeticao: 5
+Usuarios simultaneos: 5
+Duracao configurada: 2 minutos
+Ferramenta: k6 2.3.0
+
+HORARIOS
+Inicio: 21:02:33
+Fim: 21:04:45
+
+RESULTADOS K6
+Requisicoes: 3585
+Throughput: 29.739076 req/s
+Latencia media: 167.61 ms
+Latencia mediana: 157.68 ms
+Latencia p90: 226.22 ms
+Latencia p95: 255.10 ms
+Latencia maxima: 438.94 ms
+Falhas HTTP: 0%
+
+METRICAS PROMETHEUS/GRAFANA
+Intervalo de coleta: 5 segundos
+CPU maxima observada: 89.6% as 21:04:20
+Memoria heap maxima observada: 98.2 MiB as 21:04:40
+
+Relatorio bruto: resultado-r5.json
