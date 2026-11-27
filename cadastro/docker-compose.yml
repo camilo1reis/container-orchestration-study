@@ -1,32 +1,34 @@
 services:
   mysql:
     image: mysql:8
-    container_name: mysql-cadastro
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:?Configure MYSQL_ROOT_PASSWORD}
       MYSQL_DATABASE: ${MYSQL_DATABASE:-cadastro_db}
       MYSQL_USER: ${MYSQL_USER:-cadastro_user}
       MYSQL_PASSWORD: ${MYSQL_PASSWORD:?Configure MYSQL_PASSWORD}
-    ports:
-      - "3307:3306"
     volumes:
       - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-p${MYSQL_ROOT_PASSWORD}"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
 
   app:
     build: .
-    container_name: cadastro-api
+    restart: always
     depends_on:
-      - mysql
+      mysql:
+        condition: service_healthy
     ports:
-      - "${SERVER_PORT:-8081}:${SERVER_PORT:-8081}"
+      - "${HOST_PORT:-8081}:${SERVER_PORT:-8081}"
     environment:
       SERVER_PORT: ${SERVER_PORT:-8081}
       SPRING_DATASOURCE_URL: ${SPRING_DATASOURCE_URL:?Configure SPRING_DATASOURCE_URL}
       SPRING_DATASOURCE_USERNAME: ${SPRING_DATASOURCE_USERNAME:?Configure SPRING_DATASOURCE_USERNAME}
       SPRING_DATASOURCE_PASSWORD: ${SPRING_DATASOURCE_PASSWORD:?Configure SPRING_DATASOURCE_PASSWORD}
       JWT_SECRET: ${JWT_SECRET:?Configure JWT_SECRET}
-    restart: always
 
 volumes:
   mysql_data:

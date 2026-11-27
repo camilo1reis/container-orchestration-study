@@ -65,3 +65,67 @@ As configurações de ambiente devem ser preenchidas pelo usuário conforme as i
 ## Autor
 
 Camilo Clemente dos Reis Silva
+
+## Reprodução local da aplicação
+
+A aplicação pode ser executada localmente utilizando Docker Compose, com os serviços da API Spring Boot e do banco de dados MySQL.
+
+### Pré-requisitos
+
+- Docker Desktop ou Docker Engine com Docker Compose.
+- Git para obter o código-fonte.
+- JDK 21.
+
+### Configuração do ambiente
+
+Entre na pasta `cadastro` e crie o arquivo de configuração local:
+
+```powershell
+Copy-Item .env.compose.example .env.compose
+```
+
+Edite `.env.compose` e configure as credenciais do MySQL e o segredo JWT com valores próprios.
+
+A variável `HOST_PORT` define a porta de acesso à aplicação no computador. O valor padrão é `8081`. Se essa porta estiver ocupada, altere o valor em `.env.compose`.
+
+Não compartilhe o arquivo `.env.compose`, pois ele contém credenciais locais.
+
+### Compilação e execução
+
+Na pasta `cadastro`, execute primeiro a compilação do projeto:
+
+```powershell
+.\mvnw.cmd clean package -DskipTests
+```
+
+Em seguida, inicie os serviços:
+
+```powershell
+docker compose -p cadastro-publico --env-file .env.compose up --build -d
+```
+
+### Verificação
+
+Consulte o estado dos serviços:
+
+```powershell
+docker compose -p cadastro-publico --env-file .env.compose ps
+```
+
+Para consultar os registros da aplicação:
+
+```powershell
+docker compose -p cadastro-publico --env-file .env.compose logs -f app
+```
+
+A API fica disponível em `http://localhost:8081`, considerando a porta padrão. Se `HOST_PORT` tiver sido alterada, utilize a porta configurada.
+
+### Encerramento
+
+Para interromper os serviços sem remover os dados persistidos:
+
+```powershell
+docker compose -p cadastro-publico --env-file .env.compose down
+```
+
+O volume do banco de dados é preservado. Não utilize a opção `-v` se desejar manter os dados.
